@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Following</string>
+    <string name="text_gps">Your GPS position is :</string>
+    <string name="text_gps_result">Calculating…</string>
+    <string name="text_following">GPS and WiFi</string>
+    <string name="text_wifi">WiFi</string>
+    <string name="text_gps_only">GPS</string>
+    <string name="text_welcome">Please choose a mode</string>
+    <string name="text_level">Your distance from the car is :</string>
+    <string name="text_update">Refresh WiFi</string>
+    <string name="text_freq">The Frequency is :</string>
+    <string name="text_signal">The signal strength is :</string>
+    <string name="text_accuracy_gps">The accuracy is :</string>
+    <string name="text_accuracy_gps_result">Calculating…</string>
+    <string name="text_sensors">Sensors To Matlab</string>
+
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginBottom="5dp"
+        android:id="@+id/textGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_gps" />
+
+    <TextView
+        android:id="@+id/textGpsResult"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/text_gps_result"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/textAccuracyGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_accuracy_gps" />
+
+    <TextView
+        android:id="@+id/textAccuracyGpsResult"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/text_accuracy_gps_result"
+        android:textColor="@color/colorWhite"
+        android:textSize="25sp" />
+
+</LinearLayout>
