@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:id="@+id/car_layout"
+        android:layout_width="@string/carWidth"
+        android:layout_height="@string/carLength"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorDarkGrey">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Car"
+            android:textSize="25dp"
+            android:textColor="@color/colorWhite"/>
+    </FrameLayout>
+
+
+
+    <Button
+        android:id="@+id/area1_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="@string/carWidth"
+        android:layout_height="@string/areaStripSize"
+        android:background="@color/colorPurple"
+        android:text="Front"
+        android:textSize="25sp"
+        android:layout_above="@+id/car_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/area2_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="@string/areaStripSize"
+        android:layout_height="@string/areaStripSize"
+        android:background="@color/colorOrange"
+        android:text="Front  Left"
+        android:textSize="25sp"
+        android:layout_alignTop="@+id/area1_button"
+        android:layout_toLeftOf="@+id/area1_button"
+        android:layout_toStartOf="@+id/area1_button"
+        android:layout_above="@+id/area3_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/area3_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="@string/areaStripSize"
+        android:layout_height="@string/carLength"
+        android:background="@color/colorRed"
+        android:text="Left"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/area1_button"
+        android:layout_toStartOf="@+id/area1_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/area4_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="@string/areaStripSize"
+        android:layout_height="@string/areaStripSize"
+        android:background="@color/colorOrange"
+        android:text="Rear     Left"
+        android:textSize="25sp"
+        android:layout_below="@+id/area3_button"
+        android:layout_alignLeft="@+id/area3_button"
+        android:layout_alignStart="@+id/area3_button"
+        android:layout_toLeftOf="@+id/car_layout"
+        android:layout_toStartOf="@+id/car_layout"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/area5_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="@string/carWidth"
+        android:layout_height="@string/areaStripSize"
+        android:background="@color/colorPurple"
+        android:text="Rear"
+        android:textSize="25sp"
+        android:layout_below="@+id/area3_button"
+        android:layout_toRightOf="@+id/area3_button"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/area7_button"
+        android:layout_toStartOf="@+id/area7_button" />
+
+    <Button
+        android:id="@+id/area6_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="@string/areaStripSize"
+        android:layout_height="@string/areaStripSize"
+        android:background="@color/colorOrange"
+        android:text="Rear    Right"
+        android:textSize="25sp"
+        android:layout_below="@+id/area3_button"
+        android:layout_toRightOf="@+id/area5_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/area7_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="@string/areaStripSize"
+        android:layout_height="@string/carLength"
+        android:background="@color/colorRed"
+        android:text="Right"
+        android:textSize="25sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/area1_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/area8_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="@string/areaStripSize"
+        android:layout_height="@string/areaStripSize"
+        android:background="@color/colorOrange"
+        android:text="Front Right"
+        android:textSize="25sp"
+        android:layout_above="@+id/area7_button"
+        android:layout_toRightOf="@+id/area1_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

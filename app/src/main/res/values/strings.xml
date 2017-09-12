@@ -14,4 +14,11 @@
     <string name="text_accuracy_gps_result">Calculating…</string>
     <string name="text_sensors">Sensors To Matlab</string>
 
+    <string name="carLength">200dp</string>
+    <string name="areaStripSize">100dp</string>
+    <string name="carWidth">120dp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

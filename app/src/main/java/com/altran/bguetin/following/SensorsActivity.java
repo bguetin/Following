@@ -101,7 +101,7 @@ public class SensorsActivity extends AppCompatActivity implements SensorEventLis
             @Override
             public void run() {
                 while (true){
-                    getWifi();
+                    getSensors();
                     SystemClock.sleep(1);
                 }
             }
@@ -166,7 +166,7 @@ public class SensorsActivity extends AppCompatActivity implements SensorEventLis
 
 
 
-    protected void getWifi(){
+    protected void getSensors(){
         // Level of current connection
         int signalLevelInDb = wifiManager.getConnectionInfo().getRssi();
         int freqInMHz = wifiManager.getConnectionInfo().getFrequency();
@@ -200,7 +200,7 @@ public class SensorsActivity extends AppCompatActivity implements SensorEventLis
         String sTransY = setStringFormat(mQuatRot[5]);
         String sTransZ = setStringFormat(mQuatRot[6]);
 
-        MainActivity.sendToMatlabSensors(sPitch,sRoll,sAzim,sAccX,sAccY,sAccZ);
+        MainActivity.sendToMatlabSensors(sPitch,sRoll,sAzim,sAccX,sAccY,sAccZ,sGyroRotX,sGyroRotY,sGyroRotZ);
     }
 
 
@@ -230,6 +230,9 @@ public class SensorsActivity extends AppCompatActivity implements SensorEventLis
             accGravityY = event.values[1];
             accGravityZ = event.values[2];
 
+            // alpha is calculated as t / (t + dT)
+            // with t, the low-pass filter's time-constant
+            // and dT, the event delivery rate
             //mGravity[0] = alpha * mGravity[0] + (1 - alpha) * event.values[0];
             //mGravity[1] = alpha * mGravity[1] + (1 - alpha) * event.values[1];
             //mGravity[2] = alpha * mGravity[2] + (1 - alpha) * event.values[2];

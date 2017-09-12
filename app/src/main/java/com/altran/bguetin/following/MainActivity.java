@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public static void sendToMatlab(String a, String b, String c,String d,String e,String f,String g,String h,String i){
+    public static void sendToMatlabSensors(String a, String b, String c,String d,String e,String f,String g,String h,String i){
         if (mTcpClient != null) {
             String message = a + " " + b + " " + c + " " + d + " " + e + " " + f + " " + g + " " + h + " " + i;
             System.out.println("To matab : " + message);
